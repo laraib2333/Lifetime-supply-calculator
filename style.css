@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    position: relative;
+}
+
+.shape {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.6;
+    animation: float 6s infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.circle1 {
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.2);
+    top: 20%;
+    left: 10%;
+    animation-duration: 4s;
+}
+
+.circle2 {
+    width: 150px;
+    height: 150px;
+    background: rgba(255, 255, 255, 0.3);
+    top: 50%;
+    right: 20%;
+    animation-duration: 5s;
+}
+
+.circle3 {
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.4);
+    top: 70%;
+    left: 30%;
+    animation-duration: 6s;
+}
+.main{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 1rem;
+}
+h1{
+    position: relative; 
+    z-index: 1;
+     color: white; 
+     font-size: 3em;
+    text-shadow: 3px 8px 8px #451509;
+}
+input{
+    width: 30vw;
+    border-radius: 60% 20% 60% ;
+    font-size: 1.5rem;
+    border: none;
+    box-shadow: inset 5px 4px 7px 2px #451509,  5px 4px 5px 2px #451509  ;
+    text-align: center;
+    padding: .5rem 2rem;
+    background-color:#d5c3b6 ;
+}
+button{
+    width: 10vw;
+    padding:  .5rem 2rem;
+    border-radius: 60% 20% 60% ;
+    background-color:#451509 ;
+    color: #ffff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+button:hover {
+    background-color: rgb(149, 126, 108);
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+button:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+label{
+    color:#451509 ;
+    font-size: 1.34rem;
+    font-weight: 700;
+    text-shadow: 2px 2px rgb(249, 246, 243);
+}
+.message{
+    font-size: 1.567rem;
+    text-align: center;
+    font-style: italic;
+     color: #451509;
+     text-shadow: 3px 3px 4px #f6f2f1;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     font-weight: 800;
+    width: 35vw;
+    height: 5vh;
+   padding: .25rem;
+   transition: all 6s ease-in-out ;
+}
